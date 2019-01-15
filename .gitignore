@@ -1,0 +1,8 @@
+examples/.terraform/
+.terraform
+terraform.tfstate
+terraform.tfstate.backup
+.terraform.tfstate.lock.info
+examples/terraform.tfstate
+examples/terraform.tfstate.backup
+examples/.terraform.tfstate.lock.info
