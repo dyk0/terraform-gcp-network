@@ -6,17 +6,6 @@ variable "project_id" {
   description = "GCP project ID to spin this cluster in"
 }
 
-variable "timeouts" {
-  type        = "map"
-  description = "GCP API transaction timeouts"
-
-  default = {
-    create = "15m"
-    update = "15m"
-    delete = "15m"
-  }
-}
-
 variable "cluster_region" {
   type        = "string"
   description = "GCP region to spin resources in"

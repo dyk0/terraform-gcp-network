@@ -11,7 +11,6 @@ resource "google_compute_subnetwork" "primary" {
   name                     = "${var.cluster_name}"
   ip_cidr_range            = "${var.subnetwork_cidr}"
   network                  = "${google_compute_network.primary.self_link}"
-  timeouts                 = "${var.timeouts}"
   private_ip_google_access = "${var.private_ip_google_access}"
   enable_flow_logs         = "${var.enable_flow_logs}"
 
